@@ -1,0 +1,9 @@
+{
+	"info": {
+		"_postman_id": "9c669f8c-e9ff-40cd-bf3c-0763f7368112",
+		"name": "CCS-Accounts Copy",
+		"description": "Collections of test scenarios for Accounts API from both local and cloud instances",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": []
+}

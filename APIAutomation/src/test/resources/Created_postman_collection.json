@@ -1,0 +1,716 @@
+{
+  "item": [
+    {
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {},
+        "url": {
+          "path": [
+            "api",
+            "users",
+            "2"
+          ],
+          "protocol": "https",
+          "host": [
+            "reqres.in"
+          ],
+          "raw": "https://reqres.in/api/users/2"
+        }
+      },
+      "name": "SampleGetTC_01",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "value": "application/json",
+            "key": "Accept"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"firstname\": \"Sourav\",\r\n\t\"lastname\": \"Ganguly\",\r\n\t\"totalprice\": 111,\r\n\t\"depositpaid\": true,\r\n\t\"bookingdates\": {\r\n\t\t\"checkin\": \"2018-01-01\",\r\n\t\t\"checkout\": \"2019-01-01\"\r\n\t},\r\n\t\"additionalneeds\": \"Breakfast\"\r\n}\r\n"
+        },
+        "url": {
+          "path": [
+            "booking"
+          ],
+          "protocol": "https",
+          "host": [
+            "restful-booker.herokuapp.com"
+          ],
+          "raw": "https://restful-booker.herokuapp.com/booking"
+        }
+      },
+      "name": "SampleOrchPostTC_01",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {},
+        "url": {
+          "path": [
+            "digest-auth"
+          ],
+          "protocol": "https",
+          "host": [
+            "postman-echo.com"
+          ],
+          "raw": "https://postman-echo.com/digest-auth"
+        }
+      },
+      "name": "SampleAuthorizeDigestGetTC_02",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "value": "application/json",
+            "key": "Accept"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {},
+        "url": {
+          "path": [
+            "booking",
+            "1307"
+          ],
+          "protocol": "https",
+          "host": [
+            "restful-booker.herokuapp.com"
+          ],
+          "raw": "https://restful-booker.herokuapp.com/booking/1307"
+        }
+      },
+      "name": "SampleOrchGetTC_02",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {},
+        "url": {
+          "path": [
+            "basic-auth"
+          ],
+          "protocol": "https",
+          "host": [
+            "postman-echo.com"
+          ],
+          "raw": "https://postman-echo.com/basic-auth"
+        }
+      },
+      "name": "SampleAuthorizeBasicGetTC_01",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "value": "reqres-free-v1",
+            "key": "x-api-key"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"name\": \"Sachin Tendulkar\",\r\n    \"job\": \"Cricketer\"\r\n}\r\n"
+        },
+        "url": {
+          "path": [
+            "api",
+            "users"
+          ],
+          "protocol": "https",
+          "host": [
+            "reqres.in"
+          ],
+          "raw": "https://reqres.in/api/users"
+        }
+      },
+      "name": "SamplePostTC_02",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 201\\\"] \u003d responseCode.code \u003d\u003d 201;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "value": "reqres-free-v1",
+            "key": "x-api-key"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"name\": \"Raja\",\r\n    \"job\": \"Tester\"\r\n}\r\n"
+        },
+        "url": {
+          "path": [
+            "api",
+            "users",
+            "2"
+          ],
+          "protocol": "https",
+          "host": [
+            "reqres.in"
+          ],
+          "raw": "https://reqres.in/api/users/2"
+        }
+      },
+      "name": "SamplePutTC_3R",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "value": "reqres-free-v1",
+            "key": "x-api-key"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"name\": \"Sakthi\",\r\n    \"job\": \"Developer\"\r\n}\r\n"
+        },
+        "url": {
+          "path": [
+            "api",
+            "users",
+            "2"
+          ],
+          "protocol": "https",
+          "host": [
+            "reqres.in"
+          ],
+          "raw": "https://reqres.in/api/users/2"
+        }
+      },
+      "name": "SamplePatchTC_4R",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "value": "reqres-free-v1",
+            "key": "x-api-key"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {},
+        "url": {
+          "path": [
+            "api",
+            "users",
+            "2"
+          ],
+          "protocol": "https",
+          "host": [
+            "reqres.in"
+          ],
+          "raw": "https://reqres.in/api/users/2"
+        }
+      },
+      "name": "SampleDeleteTC_5R",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 204\\\"] \u003d responseCode.code \u003d\u003d 204;\""
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {},
+        "url": {
+          "path": [
+            "api",
+            "users",
+            "2"
+          ],
+          "protocol": "https",
+          "host": [
+            "reqres.in"
+          ],
+          "raw": "https://reqres.in/api/users/2"
+        }
+      },
+      "name": "SampleGetTC_01",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "value": "application/json",
+            "key": "Accept"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"firstname\": \"Sourav\",\r\n\t\"lastname\": \"Ganguly\",\r\n\t\"totalprice\": 111,\r\n\t\"depositpaid\": true,\r\n\t\"bookingdates\": {\r\n\t\t\"checkin\": \"2018-01-01\",\r\n\t\t\"checkout\": \"2019-01-01\"\r\n\t},\r\n\t\"additionalneeds\": \"Breakfast\"\r\n}\r\n"
+        },
+        "url": {
+          "path": [
+            "booking"
+          ],
+          "protocol": "https",
+          "host": [
+            "restful-booker.herokuapp.com"
+          ],
+          "raw": "https://restful-booker.herokuapp.com/booking"
+        }
+      },
+      "name": "SampleOrchPostTC_01",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {},
+        "url": {
+          "path": [
+            "digest-auth"
+          ],
+          "protocol": "https",
+          "host": [
+            "postman-echo.com"
+          ],
+          "raw": "https://postman-echo.com/digest-auth"
+        }
+      },
+      "name": "SampleAuthorizeDigestGetTC_02",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "value": "application/json",
+            "key": "Accept"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {},
+        "url": {
+          "path": [
+            "booking",
+            "1307"
+          ],
+          "protocol": "https",
+          "host": [
+            "restful-booker.herokuapp.com"
+          ],
+          "raw": "https://restful-booker.herokuapp.com/booking/1307"
+        }
+      },
+      "name": "SampleOrchGetTC_02",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {},
+        "url": {
+          "path": [
+            "basic-auth"
+          ],
+          "protocol": "https",
+          "host": [
+            "postman-echo.com"
+          ],
+          "raw": "https://postman-echo.com/basic-auth"
+        }
+      },
+      "name": "SampleAuthorizeBasicGetTC_01",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "value": "reqres-free-v1",
+            "key": "x-api-key"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"name\": \"Sachin Tendulkar\",\r\n    \"job\": \"Cricketer\"\r\n}\r\n"
+        },
+        "url": {
+          "path": [
+            "api",
+            "users"
+          ],
+          "protocol": "https",
+          "host": [
+            "reqres.in"
+          ],
+          "raw": "https://reqres.in/api/users"
+        }
+      },
+      "name": "SamplePostTC_02",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 201\\\"] \u003d responseCode.code \u003d\u003d 201;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "value": "reqres-free-v1",
+            "key": "x-api-key"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"name\": \"Raja\",\r\n    \"job\": \"Tester\"\r\n}\r\n"
+        },
+        "url": {
+          "path": [
+            "api",
+            "users",
+            "2"
+          ],
+          "protocol": "https",
+          "host": [
+            "reqres.in"
+          ],
+          "raw": "https://reqres.in/api/users/2"
+        }
+      },
+      "name": "SamplePutTC_3R",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "value": "reqres-free-v1",
+            "key": "x-api-key"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"name\": \"Sakthi\",\r\n    \"job\": \"Developer\"\r\n}\r\n"
+        },
+        "url": {
+          "path": [
+            "api",
+            "users",
+            "2"
+          ],
+          "protocol": "https",
+          "host": [
+            "reqres.in"
+          ],
+          "raw": "https://reqres.in/api/users/2"
+        }
+      },
+      "name": "SamplePatchTC_4R",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 200\\\"] \u003d responseCode.code \u003d\u003d 200;\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "value": "reqres-free-v1",
+            "key": "x-api-key"
+          },
+          {
+            "value": "application/json",
+            "key": "Content-Type"
+          }
+        ],
+        "body": {},
+        "url": {
+          "path": [
+            "api",
+            "users",
+            "2"
+          ],
+          "protocol": "https",
+          "host": [
+            "reqres.in"
+          ],
+          "raw": "https://reqres.in/api/users/2"
+        }
+      },
+      "name": "SampleDeleteTC_5R",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "\"tests[\\\"Status code is 204\\\"] \u003d responseCode.code \u003d\u003d 204;\""
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "info": {
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "name": "CCS-Accounts Copy",
+    "description": "Collections of test scenarios for Accounts API from both local and cloud instances",
+    "_postman_id": "9c669f8c-e9ff-40cd-bf3c-0763f7368112"
+  }
+}
